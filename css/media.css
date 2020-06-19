@@ -111,6 +111,14 @@
 .item-sidebar__name {
     font-size: 17px;
 }
+.section-contacs .block-form {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.section-form_consult .block-form {
+    padding-left: 100px;
+    padding-right: 50px;
+}
 }
 
 /* Medium Devices, Desktops */
@@ -265,6 +273,38 @@ left: -27px !important;
     	-o-order: 2;
     	order: 2;
     }
+    .menu li a {
+        font-size: 21px;
+    }
+    .menu-block {
+    padding: 30px 25px;
+}
+.item-question__name {
+    padding: 33px 35px;
+    padding-right: 65px;
+    }
+    .item-question__answer {
+    padding: 33px 35px;
+    padding-right: 65px;
+    padding-top: 0;
+}
+.section-contacs .block-form {
+    float: none;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+.map-contacts {
+    margin-top: -50px;
+}
+.section-form_consult .block-form {
+    padding: 30px 25px;
+}
+.section-form_consult .btn-main {
+    max-width: 100%;
+}
+.section-form_consult {
+    padding-bottom: 100px;
+}
 }
 
 /* Small Devices, Tablets */
@@ -484,7 +524,70 @@ margin: 15px auto;
     .slider-for__item {
     	height: 400px;
     }
-
+.menu li a {
+    font-size: 18px;
+}
+.item-question {
+    font-size: 16px;
+}
+.item-question__answer,
+.item-question__name {
+    padding: 25px 20px;
+    padding-right: 30px;
+}
+.item-question__answer {
+    padding-top: 0;
+}
+.item-question__name i {
+    right: 15px;
+}
+.title-contacts {
+    margin-top: 30px;
+}
+.map-contacts {
+    margin-top: 0;
+}
+.map-contacts {
+    height: 300px !important;
+}
+.section-contacs {
+    text-align: center;
+}
+.bottom-review,
+.item-review {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.services-about {
+    font-size: 16px;
+    line-height: 22px;
+    padding: 25px 25px;
+    padding-bottom: 40px;
+    }
+    .bottom-services {
+        padding-top: 30px;
+        padding-bottom: 100px;
+    }
+    .item-services {
+        padding: 30px 25px;
+    }
+    .section-form_consult .btn-main {
+        float: none;
+        width: 100%;
+    }
+  .item-facing {
+    width: 49%;
+    margin-top: 15px;
+}
+.item-facing__name {
+    max-width: 100%;
+}
+.modal-facing {
+    padding: 30px 15px;
+}
+.modal-facing__name {
+    text-align: center;
+}
 }
 
 /* Extra Small Devices, Phones */
@@ -701,6 +804,65 @@ margin: 15px auto;
 .slider-main-portfolio .slick-dots {
  bottom: -55px;
 }
+.menu {
+    columns: 2;
+}
+.menu li a {
+    font-size: 16px;
+}
+.fancybox-close {
+    right: 0;
+}
+.item-question {
+    font-size: 14px;
+}
+.section-answers {
+    padding-bottom: 100px;
+}
+.section-contacs .block-form {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.bottom-review, .item-review {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 14px;
+}
+.item-review {
+    padding-top: 20px;
+}
+.item-review__date {
+    font-size: 16px;
+}
+.item-review__name {
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+.btn-video__icon {
+    margin-left: 5px;
+}
+.section-reviews {
+    padding-bottom: 100px;
+}
+.item-services__title {
+    font-size: 16px;
+}
+.item-services__title br {
+    display: none;
+}
+.services-about::after {
+    bottom: -79px;
+}
+.item-facing__image {
+    height: 110px;
+    width: 110px;
+    }
+    .item-facing {
+        font-size: 14px;
+    }
+    .modal-facing {
+        padding-top: 10px;
+    }
 }
 
 
@@ -753,6 +915,10 @@ margin: 15px auto;
 
 }
 @media only screen and (min-width : 1920px) {
+    .section-calculator {
+        -webkit-background-size: 100% 100%;
+        background-size: 100% 100%;
+    }
 .section-form {
 	-webkit-background-size: cover;
 	background-size: cover;
