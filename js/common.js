@@ -7,26 +7,57 @@ $(document).ready(function() {
 	//плавный скролл
 	$(".navigat li a").mPageScroll2id();
 
+	$(".item-question__name").click(function(e) {
+		e.preventDefault();
+		$(".item-question").removeClass("active");
+
+		$(".item-question__answer").slideUp(200);
+		if ($(this).siblings(".item-question__answer").is(":hidden")) {
+			$(this).parent().addClass("active");
+			$(this).siblings(".item-question__answer").slideDown(200);
+		
+		} else {
+			$(this).parent().removeClass("active");
+		$(this).siblings(".item-question__answer").slideUp(200);
+		
+		}
+
+		});
+
+
+$(".item-facing").click(function(e) {
+		e.preventDefault();
+		$(".item-facing").removeClass("active");
+		$(this).toggleClass("active");
+	});
 
 	//кнопка sandwich
 	$(".btn_nav").click(function() {
 		$(".sandwich").toggleClass("active");
-		if ($(".menu").is(":hidden")) {
-			$(".menu").slideDown(600);
+		if ($(".menu-block").is(":hidden")) {
+			$(".menu-block").slideDown(300);
 		} else {
-			$(".menu").slideUp(600);
+			$(".menu-block").slideUp(300);
 		}
 		
 	});
 
-	$(".menu a").click(function() {
-		$(".menu").slideUp(600);
+	$(".menu-block a").click(function() {
+		$(".menu-block").slideUp(300);
 		$(".sandwich").removeClass("active");
 	});
 
+	$(document).mouseup(function (e){ 
+	var div = $(".menu-block"); 
+	if (!div.is(e.target) 
+		&& div.has(e.target).length === 0) { 
+		div.slideUp(300);
+}
+});
 
-	$(".serie-block:not(.serie-block_form)").click(function() {
-		$(".serie-block:not(.serie-block_form)").removeClass("active");
+
+	$(".slider-series .serie-block:not(.serie-block_form)").click(function() {
+		$(".slider-series .serie-block:not(.serie-block_form)").removeClass("active");
 		$(this).toggleClass("active");
 	});
 
