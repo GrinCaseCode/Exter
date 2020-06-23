@@ -708,10 +708,10 @@ p {
 	padding-bottom: 10px;
 }
 .slider-series .serie-block {
-	opacity: 0;
+
 }
 .slider-series .slick-active .serie-block {
-	opacity: 1;
+
 }
 .slider-series .serie-block:not(.serie-block_form) {
 	cursor: pointer;
@@ -2755,4 +2755,33 @@ select {
 }
 .fancybox-inner {
 	overflow: visible !important;
+}
+.selection {
+	padding-top: 80px;
+	padding-bottom: 30px;
+}
+.serie-block .checkbox {
+	margin-top:  7px;
+	white-space: nowrap;
+}
+.serie-block .d_flex {
+	justify-content: center;
+}
+.selection .serie-block {
+	min-height: 180px;
+}
+.selection .slider-series {
+	margin-top: 15px;
+}
+.serie-block_form input {
+	margin-bottom: 8px;
+}
+.serie-block_form  .serie-block__title {
+	padding-bottom: 7px;
+}
+.serie-block_form {
+	padding-top: 10px;
+}
+.selection {
+	background-image: url(../img/bg_selection2.jpg);
 }

@@ -147,13 +147,42 @@ $(".item-facing").click(function(e) {
 		slidesToScroll: 1,
 	});
 
-	$(".slider-series").slick({
+	$(".selection .slider-series").slick({
+		arrows: true,
+		dots: false,
+		infinite: true,
+		slidesToShow:4,
+		vertical: true,
+		centerMode: true,
+		focusOnSelect: true,
+		centerPadding: '0',
+		prevArrow: '<div class="slick-prev slick-arrow"><i class="fa fa-angle-up" aria-hidden="true"></i><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><i class="fa fa-angle-down" aria-hidden="true"></i><div/>',
+		slidesToScroll: 1,
+		responsive: [
+		{
+			breakpoint: 1200,
+			settings: {
+				slidesToShow: 3,
+			}
+		},
+		{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 3,
+			}
+		}
+		]
+	});
+
+	$(".section-calculator .slider-series").slick({
 		arrows: true,
 		dots: false,
 		infinite: true,
 		slidesToShow:3,
 		vertical: true,
 		centerMode: true,
+		focusOnSelect: true,
 		centerPadding: '0',
 		prevArrow: '<div class="slick-prev slick-arrow"><i class="fa fa-angle-up" aria-hidden="true"></i><div/>',
 		nextArrow: '<div class="slick-next slick-arrow"><i class="fa fa-angle-down" aria-hidden="true"></i><div/>',

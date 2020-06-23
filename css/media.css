@@ -119,6 +119,13 @@
     padding-left: 100px;
     padding-right: 50px;
 }
+.serie-block .checkbox {
+    white-space: normal;
+}
+.selection {
+    min-height: auto;
+    background-size: 100% 142%;
+}
 }
 
 /* Medium Devices, Desktops */
@@ -304,6 +311,13 @@ left: -27px !important;
 }
 .section-form_consult {
     padding-bottom: 100px;
+}
+
+.serie-block .checkbox {
+    white-space: nowrap;
+}
+.selection .serie-block {
+    min-height: 176px;
 }
 }
 
